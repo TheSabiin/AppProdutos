@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppProdutos</string>
+    <string-array name="categoria">
+        <item>Informatica</item>
+        <item>Telefonia</item>
+        <item>Games</item>
+    </string-array>
+</resources>

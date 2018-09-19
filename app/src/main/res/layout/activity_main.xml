@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome do Produto"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtQtde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantidade em estoque"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Valor do produto"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spnCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/categoria" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="salvar"
+        android:text="Salvar" />
+
+    <ListView
+        android:id="@+id/listProduto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
